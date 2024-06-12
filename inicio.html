@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>NATANET</title>
+    
+</head>
+<body>
+    <div>
+        <button id="logout">Loguot</button>
+    </div>
+    <header>
+        <div class="header">
+            <img src="mapache-pedro.gif" class="mapache-logo">
+            <h1>NATANET</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="divnav">
+            <span class="material-symbols-outlined">home</span>   
+            <a href="inicio.html" class="super-link">Inicio</a>
+       </div>
+       <div class="divnav">
+            <span class="material-symbols-outlined">add_circle</span>
+            <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">paid</span>M   
+            <a href="montos_programas.html" class="super-link"> ontos Programas</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">ecg_heart</span>
+            <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+        </div>
+        <div class="divnav">
+        <span class="material-symbols-outlined">add_circle</span>
+        <a href="excepciones_os_plan_cod.html" class="super-link"> Excepciones os-plan-Cod</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">add_circle</span>
+            <a href="excepciones.html" class="super-link"> Excepciones OS</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">account_circle</span>
+            <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+        </div>
+    </nav>
+
+    <section>
+        <h2>Visualizador de precios</h2>
+    </section>
+    <div class="div_selec_container">
+        <div class="select-container">
+            <select id="DespPrograma">
+                <option value="">Selecciona un programa de atencion</option>
+            </select>          
+        </div>
+        <div class="select-container">
+            <select id="DespOs">
+                <option value="">Selecciona una ObraSocial</option>
+            </select>          
+        </div>
+        <div class="select-container">
+            <select id="DespPlan">
+                <option value="">Selecciona un Plan</option>
+            </select>          
+        </div>
+        <div class="select-container">
+            <select id="DespMes">
+                <option value="">Selecciona un mes</option>
+            </select>          
+        </div>
+        <div class="select-container">
+            <select id="DespYear">
+                <option value="">Selecciona un Año</option>
+            </select>  
+
+        </div>
+        <button id="btnCargarDatos">Cargar Datos</button>   
+    </div> 
+    <div class="tabla_principal">
+    <table id="tablaDatos">
+        <thead>
+            <tr>
+                <th>Codigo de Practica</th>
+                <th>Nombre Practica</th>
+                <th>Total Convenio</th>
+                <th>Tipo Autorizacion</th>              
+                <th>Derivacion</th>
+                <th>Coseguro</th>
+                <th>Valor Particular</th>
+                <th>Excepciones de estudios</th>
+                <th>Excepciones de OS</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+        </table> 
+
+    </div>
+    <div>  
+      <label>Total</label>       
+     <input type="text" id="total" readonly>
+     <label>coseguro</label>       
+     <input type="text" id="coseguro" readonly>
+     <label>Importe Minimo Programa</label>       
+     <input type="text" id="importeMinimo" readonly>
+     <label>Importe a pagar</label>       
+     <input type="text" id="importeAPagar" readonly>
+     <br>
+     <label>Monto Particular</label>       
+     <input type="text" id="montoParticular" readonly>
+    </div>
+
+    <table id="tablaintereses" class="tabla">
+        <thead>
+            <tr>
+                <th>TARJETAS</th>
+                <th>CUOTAS</th>
+                <th>INTERES</th>
+                <th>IMPORTE TOTAL A PAGAR</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table> 
+    <footer>
+        <p>Derechos de autor &copy; 2024 Ignacio Alvarez.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

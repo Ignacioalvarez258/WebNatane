@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Usuarios</title>
+</head>
+<body>
+    <div>
+        <button id="logout">Loguot</button>
+    </div>
+    <header>
+        <div class="header">
+            <img src="mapache-pedro.gif" class="mapache-logo">
+            <h1>NATANET</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="divnav">
+            <span class="material-symbols-outlined">home</span>   
+            <a href="inicio.html" class="super-link">Inicio</a>
+       </div>
+       <div class="divnav">
+            <span class="material-symbols-outlined">add_circle</span>
+            <a href="programa.html" class="super-link">Generacion Programas Atencion</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">paid</span>M   
+            <a href="montos_programas.html" class="super-link"> ontos Programas</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">ecg_heart</span>
+            <a href="practicas_programas.html" class="super-link">Asignar Practicas a Programas Atencion</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">add_circle</span>
+            <a href="excepciones_os_plan_cod.html" class="super-link"> Excepciones os-plan-Cod</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">add_circle</span>
+            <a href="excepciones.html" class="super-link"> Excepciones OS</a>
+        </div>
+        <div class="divnav">
+            <span class="material-symbols-outlined">account_circle</span>
+            <a href="usuarios.html" class="admin-link">Gestion De usuarios</a>
+        </div>
+    </nav>
+    <section>
+        <h2>Gestion de usuarios de la aplicacion</h2>
+    </section>
+
+    <button id="btnAddUser">Agregar Usuario</button>
+    
+    <div id="usersModalAdd" class="modal">
+        <div class="modal-content">
+          <span id="closemodalAddUsers" class="close">&times;</span>
+                            
+           <form id="addUserForm">
+                        <label for="nombre">Nombre :</label>
+                        <input type="text" id="nombreUserAdd" name="name" required><br><br>                          
+                        <label for="last_name">Apellido :</label>
+                        <input type="text" id="apellidoUserAdd" name="last_name" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="mailUseraAdd" name="email" required><br><br> 
+                        <label for="user_name"> Usuario:</label>
+                        <input type="text" id="userNameUserAdd" name="user_name" required><br><br> 
+                        <label for="password">Password:</label>
+                        <input type="password" id="passwordUserAdd" name="password"><br><br>   
+                        <label for="role">Rol:</label>
+                        <input type="text" id="rolUserAdd" name="role" required><br><br>       
+                        <button type="submit" >Guardar Usuario</button>                                                  
+            </form>                
+        </div>
+      </div>
+      <div id="tableUsers">
+        <table id="tablaUsuarios">
+            <thead>
+                <tr>
+                   
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                    <th>EMAIL</th>
+                    <th>NOMBRE USUARIO</th>
+                    <th>ROL</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table> 
+      
+    </div>
+
+
+
+</body>
+<script src="scriptUsuarios.js"></script>
+</html>
